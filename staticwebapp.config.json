@@ -1,0 +1,29 @@
+{
+  "routes": [
+    {
+      "route": "/*",
+      "serve": "/index.html",
+      "statusCode": 200
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": [
+      "*.{css,scss,sass,less}",
+      "*.{js,jsx,ts,tsx}",
+      "*.svg",
+      "*.png",
+      "*.jpg",
+      "*.jpeg",
+      "*.gif",
+      "*.webp",
+      "*.ico",
+      "*.webmanifest",
+      "*.map"
+    ]
+  },
+  "mimeTypes": {
+    ".woff": "font/woff",
+    ".woff2": "font/woff2"
+  }
+}
